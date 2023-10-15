@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHỞ 468⭐️</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+        }
+        .image {
+            display: inline-block;
+            margin: 10px;
+            width: 30%;
+            position: relative;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        header {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .center-text {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+        }
+        p.p3 {
+            font-size: 24px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .logo-title {
+            max-width: 100%;
+        }
+        h2 {
+            font-family: 'Your Desired Font', sans-serif;
+            font-size: 36px;
+        }
+        h4 {
+            font-family: 'Your Desired Font', sans-serif;
+            font-size: 3px;
+        }
+        h5 {
+            font-family: 'Your Desired Font', sans-serif;
+            font-size: 25px;
+        }
+        .footer {
+            background-color: aqua;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .share-btn {
+            background: white;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+        .share-icon {
+            width: 100%;
+            height: 100%;
+        }
+        .share-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .share-popup a {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+        }
+        .share-popup a:hover {
+            color: blue;
+        }
+        .share-popup .social-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .share-popup button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* CSS cho logo load trang */
+        .loading-logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loading-logo img {
+            width: 200px;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Logo load trang -->
+    <div class="loading-logo" id="loadingLogo">
+        <img src="/468 (2)/loadlogo.png" alt="Loading Logo">
+    </div>
+
+    <header>
+        <img src="/468 (2)/banghieu.jpg" alt="Logo" class="logo">
+    </header>
+    <div class="center-text">
+        <h2>MENU</h2>
+        <h4>ベトナムフォー</h4>
+        <h5> Quý khách vui lòng gọi món và thanh toán tại quầy, xin cảm ơn.
+            ご注文は入り口のレジにてお願い致します.</h5>
+        <h5> Please order at the cashier.</h5>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="/468 (2)/1.png" alt="Hình ảnh 1">
+        </div>
+        <div class="image">
+            <img src="/468 (2)/2.png" alt="Hình ảnh 2">
+        </div>
+        <div class="image">
+            <img src="/468 (2)/3.png" alt="Hình ảnh 3">
+        </div>
+        <button class="share-btn" onclick="openSharePopup()">
+            <img src="/468 (2)/icon2.png" alt="Chia sẻ" class="share-icon">
+        </button>
+        <div class="share-popup" id="sharePopup">
+            <a href="https://www.facebook.com/uyen.ng.963">
+                <img src="/468 (2)/fb.png" alt="Facebook" class="social-icon">
+                Facebook
+            </a>
+            <a href="https://www.facebook.com/uyen.ng.963">
+                <img src="/468 (2)/twiter.png" alt="Twitter" class="social-icon">
+                Twitter
+            </a>
+            <a href="mailto:hungmanhbtre279@example.com">
+                <img src="/468 (2)/gmail.png" alt="Email" class="social-icon">
+                Email
+            </a>
+            <a href="#" id="copyLink" onclick="copyToClipboard('https://www.facebook.com/uyen.ng.963')">
+                <img src="/468 (2)/copy.png" alt="Copy Link" class="social-icon">
+                Copy Link
+            </a>
+            
+            <button onclick="closeSharePopup()">Đóng</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 PHỞ 468⭐️ - All rights reserved
+    </div>
+    <script>
+        // Tự động ẩn logo load trang sau 3 giây
+        window.addEventListener("load", function () {
+            var loadingLogo = document.querySelector("#loadingLogo");
+            setTimeout(function () {
+                loadingLogo.style.display = "none";
+            }, 1500); // 1,5 giây
+        });
+
+        function openSharePopup() {
+            var popup = document.getElementById('sharePopup');
+            popup.style.display = 'block';
+        }
+
+        function closeSharePopup() {
+            var popup = document.getElementById('sharePopup');
+            popup.style.display = 'none';
+        }
+
+        function copyToClipboard(text) {
+            var textArea = document.createElement('textarea');
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        }
+    </script>
+</body>
+</html>
